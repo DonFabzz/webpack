@@ -1,0 +1,28 @@
+{
+  "name": "webpack-projet",
+  "version": "1.0.0",
+  "description": "test de webpack",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --config webpack.dev.config.js",
+    "prod": "webpack --config webpack.prod.config.js"
+  },
+  "author": "FabzR",
+  "license": "ISC",
+  "devDependencies": {
+    "@squoosh/lib": "^0.4.0",
+    "copy-webpack-plugin": "^10.0.0",
+    "css-loader": "^6.5.1",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^10.0.0",
+    "webpack": "^5.59.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "image-minimizer-webpack-plugin": "^2.2.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "style-loader": "^3.3.1"
+  }
+}

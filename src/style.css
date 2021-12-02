@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+#grille{
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-gap: 10px;
+    grid-template-rows:repeat(4, 150px) ;
+}
+
+.carre{
+    background: url('./img/test.jpg');
+    color: transparent;
+    transition-duration: 0.5s;
+    box-shadow: 0px 0px 23px -4px rgba(0,0,0,0.75);
+    transform: rotate3d(0, 1, 0, 180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Outfit', sans-serif;
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+    -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
+    user-select: none; /* Propriété standard */
+}
+
+.test{
+    color: black;
+    transform: rotate3d(0, 1, 0, 0deg);
+    background: white
+}
+
+.ok{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Outfit', sans-serif;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+#loose{
+    background: rgb(255,196,69);
+    background: linear-gradient(328deg, rgba(255,196,69,1) 0%, rgba(191,58,58,1) 71%, rgba(191,58,58,1) 93%);
+    color: white;
+    width: 500px;
+    height: 500px;
+    font-family: 'Outfit', sans-serif;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position:absolute;
+    left: 80px;
+    top: 80px;
+}
+
+button{
+    border: none;
+    background-color: white;
+    color: black;
+    width: 150px;
+    height: 50px;
+    border-radius:40px;
+    font-family: 'Outfit', sans-serif;
+    transition-duration: 0.5s;
+}
+.show{
+    display: flex!important;
+}
+button:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
